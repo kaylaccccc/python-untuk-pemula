@@ -224,3 +224,40 @@ def belajar_python(name="Alien"):       # default value
 belajar_python()
 
 
+
+
+
+
+
+
+# ===== BAB 8: Class dan Object =====
+class Cat:
+    color = "black"
+
+cat1 = Cat()
+print(cat1.color)      # black
+
+class Cat:
+    color = "black"
+
+    def __init__(self, color):
+        self.color = color
+
+cat1 = Cat("orange")
+print(cat1.color)      # orange
+
+class Cat:
+    def say(self):
+        print("Meong..meong")
+
+cat1 = Cat()
+cat1.say()
+
+class Cat:
+    color = "black"
+
+    def say(myParam):  # "self" boleh diganti nama lain
+        print("My color is %s" % myParam.color)
+
+cat1 = Cat()
+cat1.say()
