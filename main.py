@@ -102,3 +102,32 @@ else:
 
 
 
+
+
+
+# ===== BAB 5: Perulangan =====
+for x in range(5):
+    print("Halo Python.")
+
+fruits = ['Apple', 'Banana', 'Mango', 'Durian']
+for fruit in fruits:
+    print(fruit)
+
+for x in "indonesia":
+    print(x)
+
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+for x in range(5):          # break
+    print(x)
+    if x == 3:
+        break
+
+for x in range(10):         # continue: hanya cetak ganjil
+    if x % 2 == 0:
+        continue
+    print(x)
+
