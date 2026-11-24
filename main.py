@@ -183,3 +183,44 @@ print(firstPerson)
 firstPerson.clear()
 print(firstPerson)                 # {}
 
+
+
+
+
+
+
+
+# ===== BAB 7: Function =====
+def belajar_python():
+    print("Halo")
+
+belajar_python()
+
+def belajar_python(name):
+    print("Halo, Saya %s" % name)
+
+belajar_python("Rizqi")
+
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur saya %d" % (name, age))
+
+belajar_python("Rizqi", 30)
+belajar_python(age=25, name="Fika")     # keyword arguments
+
+def belajar_python(*names):             # arbitrary arguments
+    for name in names:
+        print("Halo, Saya %s" % name)
+
+belajar_python("Rizqi", "Fika", "Yudi")
+
+def belajar_python(**student):          # arbitrary keyword arguments
+    print("Halo, Saya %s. Umur Saya %d" % (student['name'], student['age']))
+
+belajar_python(age=20, name="Rizqi")
+
+def belajar_python(name="Alien"):       # default value
+    print("Halo, Saya %s" % name)
+
+belajar_python()
+
+
