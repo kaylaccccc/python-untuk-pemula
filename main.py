@@ -64,3 +64,69 @@ print(a > 5 or b < 6)         # False
 print(not (a < 5 or b > 6))   # False
 print(not (a > 5 or b < 6))   # True
 
+
+
+
+
+
+
+
+
+
+
+# ===== BAB 4: Kondisi If Else =====
+# Python memakai indentation untuk menentukan blok kode
+if True:
+    print("Benar.")
+
+x = 5
+y = 10
+if x < y:
+    print("nilai x lebih kecil dari y.")
+if x > y:
+    print("nilai x lebih besar dari y.")   # tidak dijalankan
+
+a = 80
+if a > 90:
+    print("Dapat nilai A.")
+elif a > 70:
+    print("Dapat nilai B.")                 # dijalankan
+
+a = 60
+if a > 90:
+    print("Dapat nilai A.")
+elif a > 70:
+    print("Dapat nilai B.")
+else:
+    print("Dapat nilai C.")                 # dijalankan
+
+
+
+# ===== BAB 5: Perulangan =====
+for x in range(5):
+    print("Halo Python.")
+
+fruits = ['Apple', 'Banana', 'Mango', 'Durian']
+for fruit in fruits:
+    print(fruit)
+
+for x in "indonesia":
+    print(x)
+
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+for x in range(5):          # break
+    print(x)
+    if x == 3:
+        break
+
+for x in range(10):         # continue: hanya cetak ganjil
+    if x % 2 == 0:
+        continue
+    print(x)
+
+
+
