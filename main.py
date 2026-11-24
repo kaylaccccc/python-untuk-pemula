@@ -131,3 +131,55 @@ for x in range(10):         # continue: hanya cetak ganjil
         continue
     print(x)
 
+
+
+
+
+
+
+
+
+# ===== BAB 6: Lists dan Dictionaries =====
+animals = ["Ayam", "Bebek", "Cicak"]
+print(animals[1])     # Bebek
+print(animals[-1])    # Cicak
+print(animals[-2])    # Bebek
+
+animals.append("Domba")
+animals.insert(2, "Buaya")
+print(animals)        # ['Ayam', 'Bebek', 'Buaya', 'Cicak', 'Domba']
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.remove("Bebek")
+print(animals)        # ['Ayam', 'Cicak']
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.pop()
+print(animals)        # ['Ayam', 'Bebek']
+animals.pop(0)
+print(animals)        # ['Bebek']
+animals.clear()
+print(animals)        # []
+
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.extend(["Domba", "Elang", "Gajah"])
+print(animals)
+print(["Apel", "Mangga"] + ["Durian", "Jeruk"])
+
+# Dictionaries
+firstPerson = {"first_name": "Hana", "last_name": "Malika", "age": 10}
+print(firstPerson['first_name'])   # Hana
+print(firstPerson.get('age'))      # 10
+print(firstPerson.keys())          # dict_keys(['first_name', 'last_name', 'age'])
+print(firstPerson.values())        # dict_values(['Hana', 'Malika', 10])
+
+firstPerson['weight'] = 12
+firstPerson['age'] = 15
+firstPerson.update({"hair_color": "black"})
+print(firstPerson)
+
+firstPerson.pop("age")
+print(firstPerson)
+firstPerson.clear()
+print(firstPerson)                 # {}
+
